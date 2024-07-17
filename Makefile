@@ -5,5 +5,5 @@ main.o: main.c route-records.h
 route-records.o: route-records.c route-records.h
 	gcc -c route-records.c -o route-records.o
 clean:
-	rm *.o airlineSearch
+	rm *.o
 	rm Airline

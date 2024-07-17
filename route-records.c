@@ -75,11 +75,6 @@ int fillRecords(
             ++records;
         }
     }
-    for(int i = 0; i < records; ++i) {
-        for(int j = 0; j < 6; ++j) {
-            printf("%d ",r[i].passengers[j]);
-        }
-    }
     return records;
 }
 
