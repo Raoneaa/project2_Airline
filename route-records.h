@@ -4,6 +4,7 @@
 
 #ifndef ROUTE_RECORDS_H
 #define ROUTE_RECORDS_H
+// defining struct and enums
 typedef struct {
     char origin[4];
     char destination[4];
@@ -17,8 +18,8 @@ typedef enum  {
     DESTINATION,
     AIRLINE
 } SearchType;
-
-RouteRecord* createRecords( FILE*);
+// defining the functions
+RouteRecord* createRecords( FILE* );
 int fillRecords( RouteRecord* r, FILE* fileIn );
 int findAirlineRoute( RouteRecord*, int, const char*, const char*, const char*,int);
 void searchRecords( RouteRecord* r, int length, const char* key1, const char* key2, SearchType st );
